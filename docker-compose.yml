@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  dbdesigner:
+    hostname: dbdesigner
+    container_name: dbdesigner  
+    image: dbdesigner:latest
+    ports:
+      - "80:80"

@@ -1,0 +1,4 @@
+
+azure-setup-env.ps1
+deploy-aci-filled.yaml
+.env

@@ -85,3 +85,13 @@ I don't know the best of technology for solve everyone problem in database desig
 ![Export to database](docs/images/Export_to_database.png)
 ## Share project
 ![Share](docs/images/Share_project.png)
+
+## authentication SQL
+this version use azure sql by default
+1) you must setup your azure sql server with a service principal identity
+2) you must fill environment variables
+set DB_DATABASE=
+set DB_HOST=
+set DB_CLIENTID=
+set DB_CLIENT_SECRET=
+set DB_TENANTID=

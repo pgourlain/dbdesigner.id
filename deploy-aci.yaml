@@ -1,0 +1,34 @@
+apiVersion: '2019-12-01'
+location: northeurope
+name: dbdesigner
+properties:
+  containers:
+  - name: dbdesigner
+    properties:
+      environmentVariables:
+        - name: DB_DATABASE
+          value: #DB_DATABASE#
+        - name: DB_HOST
+          value: #DB_HOST#
+        - name: DB_CLIENTID
+          value: #DB_CLIENTID#
+        - name: DB_CLIENT_SECRET
+          value: #DB_CLIENT_SECRET#
+        - name: DB_TENANTID
+          value: #DB_TENANTID#        
+      image: expaceo/dbdesigner
+      ports:
+      - port: 80
+      resources:
+        requests:
+          cpu: 1.0
+          memoryInGB: 1.5
+  osType: Linux
+  restartPolicy: Always
+  ipAddress:
+    type: Public
+    ports:
+      - port: 80
+    dnsNameLabel: dbdesigner-demo
+tags: {}
+type: Microsoft.ContainerInstance/containerGroups
