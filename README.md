@@ -90,7 +90,9 @@ I don't know the best of technology for solve everyone problem in database desig
 this version use azure sql by default
 1) you must setup your azure sql server with a service principal identity
 2) you must fill environment variables
+
     2.1) in .env file for docker-compose
+
     2.2) in azure-setup-env.ps1 for creation of aci
 
 variables are:
