@@ -7,3 +7,9 @@ services:
     image: dbdesigner:latest
     ports:
       - "80:80"
+    environment:
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_HOST=${DB_HOST}
+      - DB_CLIENTID=${DB_CLIENTID}
+      - DB_CLIENT_SECRET=${DB_CLIENT_SECRET}
+      - DB_TENANTID=${DB_TENANTID}
